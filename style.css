@@ -1,0 +1,110 @@
+/* Resetting some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container for the chat */
+.container {
+    background-color: #fff;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Header */
+header {
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+header p {
+    color: #555;
+}
+
+/* Chat Box */
+.chat-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Chat Log */
+.chat-log {
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 300px;
+    overflow-y: scroll;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+/* Styling user and AI messages with smaller font size */
+.chat-log .user-message,
+.chat-log .ai-message {
+    font-size: 14px;  /* Set font size to smaller */
+    line-height: 1.5;
+}
+
+.chat-log .user-message {
+    color: #0066cc;
+    font-weight: bold;
+}
+
+.chat-log .ai-message {
+    color: #28a745;
+    font-style: italic;
+}
+
+/* Input field */
+#user-input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    font-size: 16px;
+}
+
+/* Styling for images */
+.chat-log img {
+    max-width: 100%; /* Ensures the image is responsive */
+    height: auto;    /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: adds rounded corners */
+    margin-top: 10px;
+}
+
+/* Send Button */
+#send-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#send-btn:hover {
+    background-color: #0056b3;
+}
